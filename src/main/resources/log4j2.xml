@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+ 
+  <appenders>
+	<RandomAccessFile name="FILE" fileName="myApp.log">
+			<PatternLayout>
+				<pattern>%d %p %c{1.} [%t] %m%n</pattern>
+			</PatternLayout>
+	</RandomAccessFile>
+	
+	<console name="STDOUT">
+		<PatternLayout>
+			<pattern>%highlight{[%-5level] - [%t] - .%c{1}: %msg%n}</pattern>
+		</PatternLayout>
+	</console>
+ 
+  </appenders>
+ 
+ <loggers>
+	<root level="all">
+		<appender-ref ref="STDOUT" />
+		<appender-ref ref="FILE" />
+	</root>
+ </loggers>
+ 
+ 
+  <!-- <logger name="com.prueba.proyecto" additivity="true" level="info"> -->
+      <!-- <appender-ref ref="FILE" /> -->
+  <!-- </logger> -->
+</configuration>
