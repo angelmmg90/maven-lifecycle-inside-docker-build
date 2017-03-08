@@ -87,19 +87,19 @@ under the License.
    | Unless otherwise specified (by system property or command-line switch), the first proxy
    | specification in this list marked as active will be used.
    |-->
-  <proxies>
+  <!--<proxies>
     
     <proxy>
       <id>optional</id>
       <active>true</active>
       <protocol>http</protocol>
-      <host>10.121.8.100</host>
-      <port>8080</port>
-      <nonProxyHosts>10.121.124.23</nonProxyHosts>
+      <host></host>
+      <port></port>
+      <nonProxyHosts></nonProxyHosts>
     </proxy>
 	
     
-  </proxies>
+  </proxies>-->
 
   <!-- servers
    | This is a list of authentication profiles, keyed by the server-id used within the system.
